@@ -209,12 +209,12 @@ header.sticky{
     transition: ease .50s;
     cursor: pointer;
 }
-.sub-img img{
+/* .sub-img img{
     max-width: 100%;
     width: 120px;
     height: auto;
     margin-bottom: 20px;
-}
+} */
 .sub-box h3{
     margin-bottom: 20px;
     font-size: 24px;
@@ -233,6 +233,119 @@ header.sticky{
     transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
 }
 
+/* <!--Skill Bar --> */
+.skillbar-wrapper {
+    margin: 1.5em auto;
+    max-width: 960px;
+  }
+  
+  .skillbar {
+    position:relative;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px; 
+  }
+  
+  .skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:150px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin: 0;
+  }
+  
+  .skillbar-title span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height:35px;
+    line-height: 35px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-bar {
+    height: 35px;
+    width: 0%;
+    border-radius: 3px;
+    transition: 500ms linear;
+    transition-property: width, background-color;
+  }
+  
+  .skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba( 0, 0, 0, 0.4 );
+    transition: color 500ms ease-out;
+  }
+  
+  .complete .skill-bar-percent {
+    color: #fff;
+  }
+  
+  .complete.server .skill-bar-percent {
+    color: #333;
+  }
+  
+  .go .skillbar-title {
+    background: #d35400;  
+  }
+  
+  .go .skillbar-bar {
+    background: #e67e22;  
+  }
+  
+  
+  .html-css .skillbar-title {
+    background: #2980b9;  
+  }
+  
+  .html-css .skillbar-bar {
+    background: #3498db;  
+  }
+  
+  .python .skillbar-title {
+    background: #fac552;
+  }
+  .python .skillbar-bar {
+    background: #f1ac18;
+  }
+  
+  .c .skillbar-title {
+    background: #2c3e50;  
+  }
+  
+  .c .skillbar-bar {
+    background: #2c3e50;  
+  }
+  
+  .ms-office .skillbar-title {
+    background: #46465e;  
+  }
+  
+  .ms-office .skillbar-bar {
+    background: #5a68a5;  
+  }
+  
+  .figma .skillbar-title {
+    background: #333333;  
+  }
+  
+  .figma .skillbar-bar {
+    background: #525252;  
+  }
+  
 .heading{
     text-align: center;
 }
@@ -246,74 +359,12 @@ header.sticky{
     color: var(--secound-color);
     line-height: 28px;
 }
-/* .portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-top: 5rem;
-    text-align: center;
-    cursor: pointer;
-}
-.col{
-    position: relative;
-}
-.col img{
-    max-width: 100%;
-    width: 550px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 12px;
-    transition: all .40s;
-}
-.layer:hover{
-    background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
-}
-.layer h3{
-    position: absolute;
-    width: 100%;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--bg-color);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .40s;
-}
-.layer:hover h3{
-    bottom: 52%;
-    opacity: 1;
-}
-.layer h5{
-    position: absolute;
-    width: 100%;
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--bg-color);
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .40s;
-}
-.layer:hover h5{
-    bottom: 48%;
-    opacity: 1;
-} */
 
 /* CSS Education */
 .timeline {
     position: relative;
     width: 100%;
-    max-width: 1140px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 15px 0;
     transition: ease .45s;
@@ -392,11 +443,11 @@ header.sticky{
   }
   
   .container.left .date {
-    right: -75px;
+    right: -110px;
   }
   
   .container.right .date {
-    left: -75px;
+    left: -110px;
   }
   
   .container .icon {
@@ -494,50 +545,6 @@ header.sticky{
     }
   }
 
-.service-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-    grid-gap: 2rem;
-    align-items: center;
-    margin-top: 5rem;
-}
-.row{
-    background: #ffffff;
-    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
-    border-radius: 12px;
-    padding: 45px 45px 45px 45px;
-    transition: ease .45s;
-    cursor: pointer;
-}
-.s img{
-    height: 65px;
-    width: 65px;
-    background: #bc8a7c;
-    padding: 15px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-.s.s-two i{
-    margin-top: 5px;
-    background: #d9d1fa;
-    
-}
-.row h3{
-    text-align: center;
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 2px;
-}
-.row p{
-    font-size: var(--p-font);
-    color: var(--secound-color);
-    line-height: 28px;
-}
-.row:hover{
-    will-change: transform;
-    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05, 1.05, 1.05);
-}
-
 .cta-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
@@ -612,52 +619,6 @@ header.sticky{
     font-size: var(--p-font);
 }
 
-/* .contact{
-    background: #609bbdeb;
-    width: 64%;
-    margin: 100px auto;
-    padding: 70px 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 12px;
-    background-image: url(img/intro.png);
-    background-size: cover;
-}
-.center h3{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 3px;
-    color: var(--bg-color);
-}
-.center p{
-    font-size: var(--p-font);
-    color: var(--bg-color);
-    line-height: 26px;
-    margin-bottom: 25px;
-}
-.contact .action form input[type="email"] {
-    max-width: 100%;
-    width: 470px;
-    padding: 12px 15px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    border: none;
-    outline: none;
-    margin: 0 10px 20px 0;
-    border-radius: 30px;
-}
-.contact .action form input[type="submit"] {
-    padding: 12px 40px;
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    border: none;
-    outline: none;
-    margin: 0 10px 20px 0;
-    border-radius: 30px;
-    cursor: pointer;
-} */
 
 .ends{
     text-align: center;
