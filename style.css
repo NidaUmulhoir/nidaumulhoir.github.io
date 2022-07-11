@@ -209,12 +209,7 @@ header.sticky{
     transition: ease .50s;
     cursor: pointer;
 }
-/* .sub-img img{
-    max-width: 100%;
-    width: 120px;
-    height: auto;
-    margin-bottom: 20px;
-} */
+
 .sub-box h3{
     margin-bottom: 20px;
     font-size: 24px;
@@ -718,10 +713,5 @@ header.sticky{
     section{
         padding: 65px 3%;
         transition: .3s;
-    }
-}
-@media (max-width: 540px) {
-    .contact .action form input[type="email"] {
-        width: 310px;
     }
 }
